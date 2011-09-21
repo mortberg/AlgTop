@@ -1,6 +1,6 @@
 Name:                AlgTop
 Version:             0.1
-Cabal-version:       >=1.2
+Cabal-version:       >=1.6
 Synopsis:            A library of algebraic topology
 -- Description:         
 License:             BSD3
@@ -18,7 +18,9 @@ Source-repository head
 -- Extra-source-files:  
 
 Library
-  -- Exposed-modules:     
+  Exposed-modules:
+    AlgTop.SimplicialComplex
   
   Build-depends:       
-    base >= 4 && < 5
+    base >= 4 && < 5,
+    QuickCheck >= 2
