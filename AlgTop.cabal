@@ -19,8 +19,14 @@ Source-repository head
 
 Library
   Exposed-modules:
-    AlgTop.SimplicialComplex
+    Algebra.SNF_Bezout, 
+    Algebra.SNF_SparseF2,
+    AlgTop.SimplicialComplex,
+    AlgTop.SimplicialHomology
   
   Build-depends:       
     base >= 4 && < 5,
+    constructive-algebra == 0.3.0,
     QuickCheck >= 2
+
+  ghc-options: -O
